@@ -1,0 +1,65 @@
+---
+title: "Excecutive Summary Report"
+format:
+  pdf:
+    margin-left: ".25in"
+    margin-right: ".25in"
+    margin-top: ".25in"
+    margin-bottom: ".25in"
+title-block-style: "none"
+fontsize: "11pt"
+editor: visual
+papersize: "a4paper"
+page-width: 13
+---
+
+```{r warning=FALSE, message=FALSE, echo=FALSE}
+library(knitr)
+read_chunk('database_connectionns.R')
+read_chunk('Demographic_summary.R')
+read_chunk('length_of_stay.R')
+read_chunk('icu_events.R')
+read_chunk('icu_death.R')
+read_chunk('community_risk.R')
+
+```
+
+```{r num1, warning=FALSE, message=FALSE, echo=FALSE}
+
+```
+
+#### Demographic summary showing admit age(mean and SD) and count for other demographic categories
+
+```{r num2, warning=FALSE, message=FALSE, echo=FALSE}
+
+```
+
+Note, Ethnicity has been grouped into "WHITE" and "OTHERS" for easier interpretation and on the premise that the former category constituted majority of patients. Also, only patients in both databases have been selected to truly reflect subject peculiarities of the Hospital.
+
+#### Tables showing stratified Total and ICU lengths of stay
+
+```{r num3, warning=FALSE, message=FALSE, echo=FALSE}
+
+```
+
+#### Box plots showing stratified summary length of ICU stay for patients with a cardiac device.
+
+The box plot shows summary ICU length of stay in days for patients with a cardiac device stratified across different categories. Median, min, max and 25/75% quantiles can be seen.
+
+```{r num4, warning=FALSE, message=FALSE, echo=FALSE}
+
+```
+
+#### Summary of patients that died in ICU with a cardiac device
+
+```{r num5, warning=FALSE, message=FALSE, echo=FALSE}
+
+```
+
+#### Line plot showing covid-19 hospital cases for the month of March, 2021
+
+Trend of hospital cases can be seen to be downward sloping, declining steadily from highs above 10,000 cases to lesser cases by the end of the month. Infection risk in community can be seen to have declined.
+
+```{r num6, warning=FALSE, message=FALSE, echo=FALSE}
+
+```
